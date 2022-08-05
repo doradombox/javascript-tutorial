@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="oop.js"></script>
+    <title>javasscript-oop</title>
+</head>
+
+<body>
+    <input type="text" name="age" size=3 onChange="validate(this, 18, 99);">
+
+    <script>
+        function validate(obj, lowval, hival) {
+            console.log(typeof obj)
+            if ((obj.value < lowval) || (obj.value > hival))
+                console.log('Invalid Value!');
+            else
+                console.log('Valid value!');
+        }
+    </script>
+</body>
+
+</html>
